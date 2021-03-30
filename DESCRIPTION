@@ -1,0 +1,21 @@
+Package: OFEsim
+Version: 1.0
+Date: 2019-10-01
+Title: Simulation of data from on-farm experiments.
+Author: Fiona H Evans <fiona.evans@murdoch.edu.au>
+Maintainer: Fiona H Evans <fiona.evans@murdoch.edu.au>
+Depends:
+    R (>= 3.0.0),
+    gstat,
+    raster,
+    agricolae
+Imports:
+Description: This package contains functions for simulating data from on-farm experiments.
+License: MIT
+URL: http://www.r-project.org
+LazyData: TRUE
+Collate:
+  'designs.R'
+  'simulation.R'
+  'simulationData.R'
+RoxygenNote: 6.1.1
