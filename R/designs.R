@@ -26,11 +26,9 @@ incr.design <- function(rates, reps, ydim = 100, width = 3){
     indx <- indx + width
     }
   }
-  res <- raster::raster(strips)
-  extent(res)@xmin <- 0.5
-  extent(res)@xmin <- 0.5
-  extent(res)@xmax <- 0.5 + ncol(strips)
-  extent(res)@ymax <- 0.5 + nrow(strips)
+  res <- raster::raster(strips, 
+                        xmn=0.5, xmx=0.5 +  ncol(strips),
+                        ymn=0.5, ymx=0.5 +  nrow(strips))
   res
 }
 
@@ -56,11 +54,9 @@ decr.design <- function(rates, reps, ydim = 100, width = 3){
       indx <- indx + width
     }
   }
-  res <- raster::raster(strips)
-  extent(res)@xmin <- 0.5
-  extent(res)@xmin <- 0.5
-  extent(res)@xmax <- 0.5 + ncol(strips)
-  extent(res)@ymax <- 0.5 + nrow(strips)
+  res <- raster::raster(strips, 
+                        xmn=0.5, xmx=0.5 +  ncol(strips),
+                        ymn=0.5, ymx=0.5 +  nrow(strips))
   res
 }
 
@@ -91,11 +87,9 @@ incdec.design <- function(rates, reps, ydim = 100, width = 3){
       indx <- indx + width
     }
   }
-  res <- raster::raster(strips)
-  extent(res)@xmin <- 0.5
-  extent(res)@xmin <- 0.5
-  extent(res)@xmax <- 0.5 + ncol(strips)
-  extent(res)@ymax <- 0.5 + nrow(strips)
+  res <- raster::raster(strips, 
+                        xmn=0.5, xmx=0.5 +  ncol(strips),
+                        ymn=0.5, ymx=0.5 +  nrow(strips))
   res
 }
 
@@ -126,11 +120,9 @@ decinc.design <- function(rates, reps, ydim = 100, width = 3){
       indx <- indx + width
     }
   }
-  res <- raster::raster(strips)
-  extent(res)@xmin <- 0.5
-  extent(res)@xmin <- 0.5
-  extent(res)@xmax <- 0.5 + ncol(strips)
-  extent(res)@ymax <- 0.5 + nrow(strips)
+  res <- raster::raster(strips, 
+                        xmn=0.5, xmx=0.5 +  ncol(strips),
+                        ymn=0.5, ymx=0.5 +  nrow(strips))
   res
 }
 
@@ -155,11 +147,9 @@ rcbd.design <- function(rates, reps, ydim = 100, width = 3){
     strips[, indx:(indx + width - 1)] <- as.numeric(as.character(rcbd$book[i, "rates"]))
     indx <- indx + width
   }
-  res <- raster::raster(strips)
-  extent(res)@xmin <- 0.5
-  extent(res)@xmin <- 0.5
-  extent(res)@xmax <- 0.5 + ncol(strips)
-  extent(res)@ymax <- 0.5 + nrow(strips)
+  res <- raster::raster(strips, 
+                        xmn=0.5, xmx=0.5 +  ncol(strips),
+                        ymn=0.5, ymx=0.5 +  nrow(strips))
   res
 }
   
@@ -206,11 +196,9 @@ ch.fully.random.design <- function(rates, reps, length, ydim = 100, width = 3){
     }
     iy <- iy + length
   }
-  res <- raster::raster(strips)
-  extent(res)@xmin <- 0.5
-  extent(res)@ymin <- 0.5
-  extent(res)@xmax <- 0.5 + ncol(strips)
-  extent(res)@ymax <- 0.5 + nrow(strips)
+  res <- raster::raster(strips, 
+                        xmn=0.5, xmx=0.5 +  ncol(strips),
+                        ymn=0.5, ymx=0.5 +  nrow(strips))
   res
 }
 
@@ -246,11 +234,9 @@ ch.rcbd.design <- function(rates, reps, length, ydim = 100, width = 3){
     }
     iy <- iy + length
   }
-  res <- raster::raster(strips)
-  extent(res)@xmin <- 0.5
-  extent(res)@ymin <- 0.5
-  extent(res)@xmax <- 0.5 + ncol(strips)
-  extent(res)@ymax <- 0.5 + nrow(strips)
+  res <- raster::raster(strips, 
+                        xmn=0.5, xmx=0.5 +  ncol(strips),
+                        ymn=0.5, ymx=0.5 +  nrow(strips))
   res
 }
 
@@ -302,11 +288,9 @@ ch.zeroes.design1 <- function(rates, reps, ydim = 100, width = 3){    # assumes 
     if (i > length) i <- 1
   }
   
-  res <- raster::raster(strips)
-  extent(res)@xmin <- 0.5
-  extent(res)@ymin <- 0.5
-  extent(res)@xmax <- 0.5 + ncol(strips)
-  extent(res)@ymax <- 0.5 + nrow(strips)
+  res <- raster::raster(strips, 
+                        xmn=0.5, xmx=0.5 +  ncol(strips),
+                        ymn=0.5, ymx=0.5 +  nrow(strips))
   res
 }
 
@@ -358,11 +342,9 @@ ch.zeroes.design2 <- function(rates, reps, ydim = 100, width = 3){    # assumes 
     if (i > length) i <- 1
   }
   
-  res <- raster::raster(strips)
-  extent(res)@xmin <- 0.5
-  extent(res)@ymin <- 0.5
-  extent(res)@xmax <- 0.5 + ncol(strips)
-  extent(res)@ymax <- 0.5 + nrow(strips)
+  res <- raster::raster(strips, 
+                        xmn=0.5, xmx=0.5 +  ncol(strips),
+                        ymn=0.5, ymx=0.5 +  nrow(strips))
   res
 }
 
