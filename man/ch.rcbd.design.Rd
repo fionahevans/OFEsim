@@ -4,16 +4,16 @@
 \alias{ch.rcbd.design}
 \title{Randomised complete block (RCBD) checkerboard design.}
 \usage{
-ch.rcbd.design(rates, reps, length, ydim = 100, width = 3)
+ch.rcbd.design(rates, reps, check.length, length = 100, width = 3)
 }
 \arguments{
 \item{rates}{vector of rates.}
 
 \item{reps}{number of repetitions.}
 
-\item{length}{length of the checkeboard squares.}
+\item{check.length}{length of the checkerboard squares.}
 
-\item{ydim}{y-dimension of simulated trial design.}
+\item{length}{y-dimension of simulated trial design.}
 
 \item{width}{width of strips.}
 }

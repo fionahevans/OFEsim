@@ -4,14 +4,14 @@
 \alias{rcbd.design}
 \title{Randomised complete block (RCBD) strip design.}
 \usage{
-rcbd.design(rates, reps, ydim = 100, width = 3)
+rcbd.design(rates, reps, length = 100, width = 3)
 }
 \arguments{
 \item{rates}{vector of rates.}
 
 \item{reps}{number of repetitions.}
 
-\item{ydim}{y-dimension of simulated trial design.}
+\item{length}{y-dimension of simulated trial design.}
 
 \item{width}{width of strips.}
 }

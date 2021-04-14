@@ -4,14 +4,14 @@
 \alias{incdec.design}
 \title{Systematic strip design.}
 \usage{
-incdec.design(rates, reps, ydim = 100, width = 3)
+incdec.design(rates, reps, length = 100, width = 3)
 }
 \arguments{
 \item{rates}{vector of rates.}
 
 \item{reps}{number of repetitions.}
 
-\item{ydim}{y-dimension of simulated trial design.}
+\item{length}{y-dimension of simulated trial design.}
 
 \item{width}{width of strips.}
 }

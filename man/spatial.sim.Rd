@@ -16,9 +16,9 @@ spatial.sim(mean = 3, psill = 0.25, range = 30, nsim = 1,
 
 \item{nsim}{number of simulations.}
 
-\item{xdim}{x-dimension of simulated yield.}
+\item{xdim}{x-dimension of simulated yield (width).}
 
-\item{ydim}{y-dimension of simulated yield.}
+\item{ydim}{y-dimension of simulated yield (length).}
 
 \item{output.type}{"RasterStack" / "SpatialPixelsDataFrame"}
 }

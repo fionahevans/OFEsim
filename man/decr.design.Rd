@@ -4,14 +4,14 @@
 \alias{decr.design}
 \title{Systematic strip design.}
 \usage{
-decr.design(rates, reps, ydim = 100, width = 3)
+decr.design(rates, reps, length = 100, width = 3)
 }
 \arguments{
 \item{rates}{vector of rates.}
 
 \item{reps}{number of repetitions.}
 
-\item{ydim}{y-dimension of simulated trial design.}
+\item{length}{y-dimension of simulated trial design.}
 
 \item{width}{width of strips.}
 }

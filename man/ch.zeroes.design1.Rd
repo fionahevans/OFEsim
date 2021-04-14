@@ -4,18 +4,18 @@
 \alias{ch.zeroes.design1}
 \title{Systematic checkerboard design.}
 \usage{
-ch.zeroes.design1(rates, reps, ydim = 100, width = 3)
+ch.zeroes.design1(rates, reps, check.length, length = 100, width = 3)
 }
 \arguments{
 \item{rates}{vector of rates.}
 
 \item{reps}{number of repetitions.}
 
-\item{ydim}{y-dimension of simulated trial design.}
+\item{check.length}{length of the checkerboard squares.}
+
+\item{length}{y-dimension of simulated trial design.}
 
 \item{width}{width of strips.}
-
-\item{length}{length of the checkeboard squares.}
 }
 \value{
 Raster.

@@ -12,8 +12,8 @@
 #' @param psill (partial) sill of the variogram model.
 #' @param range range parameter of the variogram model.
 #' @param nsim number of simulations.
-#' @param xdim x-dimension of simulated yield.
-#' @param ydim y-dimension of simulated yield.
+#' @param xdim x-dimension of simulated yield (width).
+#' @param ydim y-dimension of simulated yield (length).
 #' @param output.type "RasterStack" / "SpatialPixelsDataFrame"
 #'
 #' @author Fiona Evans

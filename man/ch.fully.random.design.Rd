@@ -4,16 +4,17 @@
 \alias{ch.fully.random.design}
 \title{Randomised checkerboard design.}
 \usage{
-ch.fully.random.design(rates, reps, length, ydim = 100, width = 3)
+ch.fully.random.design(rates, reps, check.length, length = 100,
+  width = 3)
 }
 \arguments{
 \item{rates}{vector of rates.}
 
 \item{reps}{number of repetitions.}
 
-\item{length}{length of the checkeboard squares.}
+\item{check.length}{length of the checkerboard squares.}
 
-\item{ydim}{y-dimension of simulated trial design.}
+\item{length}{y-dimension of simulated trial design.}
 
 \item{width}{width of strips.}
 }
