@@ -27,7 +27,7 @@ spatial.sim <- function(mean = 3,  # Mean yield potential
                            nsim = 1, 
                            xdim = 100,
                            ydim = 100,
-                           output.type = "RasterStack")        # Number of simulations
+                           output.type = "SpatialPixelsDataFrame")        # Number of simulations
 {
   
   # From http://santiago.begueria.es/2010/10/generating-spatially-correlated-random-fields-with-r/
